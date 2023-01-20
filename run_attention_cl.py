@@ -142,7 +142,7 @@ def mask_tab(eval_data, model_name, layers_to_use):
     with open(eval_data, "r", encoding="utf-8") as f:
         all_data = json.load(f)
         print("Nr docs: ", len(all_data))
-        for doc_obj in all_data[:2]:
+        for doc_obj in all_data:
             doc_id = doc_obj["doc_id"]
             text = doc_obj["text"]
             p_to_protect = doc_obj["task"].split(":")[-1]
