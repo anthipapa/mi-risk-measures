@@ -5,7 +5,7 @@ import torch
 import numpy as np
 from nltk.corpus import stopwords
 import re, json, os, argparse
-import evaluation
+#import evaluation
 
 STOPWORDS = set(stopwords.words("english"))
 SPECIAL_TOKENS = ['<s>', '</s>', '[CLS]']
